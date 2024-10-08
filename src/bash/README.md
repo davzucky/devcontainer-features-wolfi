@@ -11,10 +11,6 @@ Installs Bash using apk
 }
 ```
 
-## Options
-
-| Options Id | Description | Type | Default Value |
-|-----|-----|-----|-----|
 
 
 
