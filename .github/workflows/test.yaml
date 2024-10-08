@@ -13,12 +13,10 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - bash
+          - python
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - chainguard/wolfi-base:latest
     steps:
       - uses: actions/checkout@v4
 
@@ -34,8 +32,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - bash
+          - python
     steps:
       - uses: actions/checkout@v4
 
