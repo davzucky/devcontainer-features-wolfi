@@ -15,9 +15,17 @@ Installs Python and common Python utilities on Wolfi base images.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| python_version | Select the Python version to install. | string | 3.12 |
-| install_ruff | Whether to install Ruff, a fast Python linter and code formatter. | boolean | false |
-| install_uv | Whether to install uv, a fast Python package installer and resolver. | boolean | false |
+| pythonVersion | Select the Python version to install. | string | 3.12 |
+| installRuff | Whether to install Ruff, a fast Python linter and code formatter. | boolean | false |
+| installUV | Whether to install uv, a fast Python package installer and resolver. | boolean | false |
+
+## Customizations
+
+### VS Code Extensions
+
+- `ms-python.python`
+- `ms-python.vscode-pylance`
+- `charliermarsh.ruff`
 
 
 
