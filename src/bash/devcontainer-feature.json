@@ -1,0 +1,19 @@
+{
+    "name": "Bash",
+    "id": "bash",
+    "version": "1.0.0",
+    "description": "Installs Bash using apk",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of Bash to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "python",
+    "id": "python",
+    "version": "1.0.0",
+    "description": "Installs Python and common Python utilities on Wolfi base images.",
+    "options": {
+        "python_version": {
+            "type": "string",
+            "enum": ["3.12", "3.11", "3.10"],
+            "default": "3.12",
+            "description": "Select the Python version to install."
+        },
+        "install_ruff": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to install Ruff, a fast Python linter and code formatter."
+        },
+        "install_uv": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether to install uv, a fast Python package installer and resolver."
+        }
+    }
+}

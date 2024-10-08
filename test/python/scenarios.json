@@ -1,0 +1,57 @@
+{
+    "default": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {}
+        }
+    }
+    ,
+    "python311": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {
+                "python_version": "3.11"
+            }
+        }
+    },
+    "python310": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {
+                "python_version": "3.10"
+            }
+        }
+    },
+    "with_ruff": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {
+                "install_ruff": true
+            }
+        }
+    },
+    "with_uv": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {
+                "install_uv": true
+            }
+        }
+    },
+    "with_ruff_and_uv": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "python": {
+                "install_ruff": true,
+                "install_uv": true
+            }
+        }
+    }
+
+}
