@@ -7,7 +7,11 @@
     "options": {
         "pythonVersion": {
             "type": "string",
-            "enum": ["3.12", "3.11", "3.10"],
+            "enum": [
+                "3.12",
+                "3.11",
+                "3.10"
+            ],
             "default": "3.12",
             "description": "Select the Python version to install."
         },
@@ -20,6 +24,15 @@
             "type": "boolean",
             "default": false,
             "description": "Whether to install uv, a fast Python package installer and resolver."
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff"
+            ]
         }
     }
 }
