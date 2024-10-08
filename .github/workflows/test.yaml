@@ -14,6 +14,7 @@ jobs:
       matrix:
         features:
           - bash
+          - docker-outside-of-docker
           - python
         baseImage:
           - chainguard/wolfi-base:latest
@@ -33,6 +34,7 @@ jobs:
       matrix:
         features:
           - bash
+          - docker-outside-of-docker
           - python
     steps:
       - uses: actions/checkout@v4
