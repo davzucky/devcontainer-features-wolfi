@@ -12,7 +12,7 @@
         "features": {
             "bash": {},
             "python": {
-                "python_version": "3.11"
+                "pythonVersion": "3.11"
             }
         }
     },
@@ -21,7 +21,7 @@
         "features": {
             "bash": {},
             "python": {
-                "python_version": "3.10"
+                "pythonVersion": "3.10"
             }
         }
     },
@@ -30,7 +30,7 @@
         "features": {
             "bash": {},
             "python": {
-                "install_ruff": true
+                "installRuff": true
             }
         }
     },
@@ -39,7 +39,7 @@
         "features": {
             "bash": {},
             "python": {
-                "install_uv": true
+                "installUV": true
             }
         }
     },
@@ -48,8 +48,8 @@
         "features": {
             "bash": {},
             "python": {
-                "install_ruff": true,
-                "install_uv": true
+                "installRuff": true,
+                "installUV": true
             }
         }
     }

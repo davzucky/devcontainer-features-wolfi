@@ -1,11 +1,7 @@
 {
     "name": "Bash",
     "id": "bash",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs Bash using apk",
-    "options": {
-    },
-    "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
-    ]
+    "documentationURL": "https://github.com/davzucky/devcontainers-features-wolfi/tree/main/src/bash"
 }
