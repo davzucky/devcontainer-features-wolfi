@@ -1,0 +1,27 @@
+{
+    "default": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "docker-outside-of-docker": {}
+        }
+    },
+    "without_compose": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "docker-outside-of-docker": {
+                "installDockerCompose": false
+            }
+        }
+    },
+    "without_buildx": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "docker-outside-of-docker": {
+                "installBuildx": false
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "docker-outside-of-docker",
+  "id": "docker-outside-of-docker",
+  "version": "1.0.0",
+  "description": "Re-use the host docker socket, adding the Docker CLI to container. Code is inspared from https://github.com/cirolosapio/devcontainers-features/tree/main/src/alpine-docker-outside-of-docker for that feature",
+  "documentationURL": "https://github.com/davzucky/devcontainers-features-wolfi/tree/main/src/docker-outside-of-docker",
+  "options": {
+    "installDocker": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Docker"
+    },
+    "installBuilx": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Buildx"
+    },
+    "installDockerCompose": {
+      "type": "boolean",
+      "default": true,
+      "description": "Install Docker Compose"
+    }
+  },
+  "entrypoint": "/usr/local/share/docker-init.sh",
+  "mounts": [
+    {
+      "source": "/var/run/docker.sock",
+      "target": "/var/run/docker-host.sock",
+      "type": "bind"
+    }
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
