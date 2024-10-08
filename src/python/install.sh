@@ -8,12 +8,11 @@ INSTALL_UV=${INSTALLUV:-"false"}
 # Update package list
 apk update
 
-apk add bash
-
 # Install Python
 if [ "${PYTHON_VERSION}" = "3.12" ] || \
    [ "${PYTHON_VERSION}" = "3.11" ] || \
    [ "${PYTHON_VERSION}" = "3.10" ]; then
+    echo "Installing Python ${PYTHON_VERSION}"
     apk add --no-cache python-${PYTHON_VERSION}-dev py3-pip
 else
     echo "Unsupported Python version: ${PYTHON_VERSION}"
