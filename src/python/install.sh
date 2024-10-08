@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 
-PYTHON_VERSION=${PYTHON_VERSION:-"3.12"}
-INSTALL_RUFF=${INSTALL_RUFF:-"false"}
-INSTALL_UV=${INSTALL_UV:-"false"}
+PYTHON_VERSION=${PYTHONVERSION:-"3.12"}
+INSTALL_RUFF=${INSTALLRUFF:-"false"}
+INSTALL_UV=${INSTALLUV:-"false"}
 
 # Update package list
 apk update
