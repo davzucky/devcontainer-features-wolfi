@@ -1,7 +1,7 @@
 
 # docker-outside-of-docker (docker-outside-of-docker)
 
-Re-use the host docker socket, adding the Docker CLI to container. Code is inspared from https://github.com/cirolosapio/devcontainers-features/tree/main/src/alpine-docker-outside-of-docker for that feature
+Re-use the host docker socket, adding the Docker CLI to container. Code is inspared from https://github.com/devcontainers/features/blob/main/src/docker-outside-of-docker/install.sh for that feature
 
 ## Example Usage
 
@@ -16,7 +16,7 @@ Re-use the host docker socket, adding the Docker CLI to container. Code is inspa
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | installDocker | Install Docker | boolean | true |
-| installBuilx | Install Buildx | boolean | true |
+| installBuildx | Install Buildx | boolean | true |
 | installDockerCompose | Install Docker Compose | boolean | true |
 
 ## Customizations
