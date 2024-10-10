@@ -4,7 +4,8 @@
         "features": {
             "bash": {},
             "docker-outside-of-docker": {}
-        }
+        },
+        "containerUser": "vscode"
     },
     "without_compose": {
         "image": "chainguard/wolfi-base:latest",
@@ -13,7 +14,8 @@
             "docker-outside-of-docker": {
                 "installDockerCompose": false
             }
-        }
+        },
+        "containerUser": "vscode"
     },
     "without_buildx": {
         "image": "chainguard/wolfi-base:latest",
@@ -22,6 +24,7 @@
             "docker-outside-of-docker": {
                 "installBuildx": false
             }
-        }
+        },
+        "containerUser": "vscode"
     }
 }
