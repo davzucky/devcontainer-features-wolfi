@@ -2,9 +2,11 @@
     "default": {
         "image": "chainguard/wolfi-base:latest",
         "features": {
+            "user": {},
             "bash": {},
             "docker-outside-of-docker": {}
-        }
+        },
+        "containerUser": "vscode"
     },
     "without_compose": {
         "image": "chainguard/wolfi-base:latest",

@@ -1,8 +1,8 @@
 {
   "name": "docker-outside-of-docker",
   "id": "docker-outside-of-docker",
-  "version": "1.1.0",
-  "description": "Re-use the host docker socket, adding the Docker CLI to container. Code is inspared from https://github.com/cirolosapio/devcontainers-features/tree/main/src/alpine-docker-outside-of-docker for that feature",
+  "version": "1.2.0",
+  "description": "Re-use the host docker socket, adding the Docker CLI to container. Code is inspared from https://github.com/devcontainers/features/blob/main/src/docker-outside-of-docker/install.sh for that feature",
   "documentationURL": "https://github.com/davzucky/devcontainers-features-wolfi/tree/main/src/docker-outside-of-docker",
   "options": {
     "installDocker": {
@@ -10,7 +10,7 @@
       "default": true,
       "description": "Install Docker"
     },
-    "installBuilx": {
+    "installBuildx": {
       "type": "boolean",
       "default": true,
       "description": "Install Buildx"
@@ -29,6 +29,9 @@
       "type": "bind"
     }
   ],
+  "dependsOn": {
+    "ghcr.io/davzucky/devcontainers-features-wolfi/user": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
