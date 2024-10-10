@@ -1,0 +1,31 @@
+{
+    "default": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {}
+        },
+        "remoteUser": "vscode"
+    },
+    "custom_user": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {
+                "username": "testuser",
+                "userUid": "2000",
+                "userGid": "2000"
+            }
+        }
+    },
+    "root_user": {
+        "image": "chainguard/wolfi-base:latest",
+        "features": {
+            "bash": {},
+            "user": {
+                "username": "none"
+            }
+        },
+        "remoteUser": "root"
+    }
+}
