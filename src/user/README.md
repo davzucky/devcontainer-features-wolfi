@@ -1,13 +1,13 @@
 
-# python (python)
+# user (user)
 
-Installs Python and common Python utilities on Wolfi base images.
+Create a user and group with the same id.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/davzucky/devcontainers-features-wolfi/python:1": {}
+    "ghcr.io/davzucky/devcontainers-features-wolfi/user:1": {}
 }
 ```
 
@@ -15,20 +15,12 @@ Installs Python and common Python utilities on Wolfi base images.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| pythonVersion | Select the Python version to install. | string | 3.12 |
-| installRuff | Whether to install Ruff, a fast Python linter and code formatter. | boolean | false |
-| installUV | Whether to install uv, a fast Python package installer and resolver. | boolean | false |
-
-## Customizations
-
-### VS Code Extensions
-
-- `ms-python.python`
-- `ms-python.vscode-pylance`
-- `charliermarsh.ruff`
+| username | Enter name of a non-root user to configure or none to skip | string | automatic |
+| userUid | Enter UID for non-root user | string | automatic |
+| userGid | Enter GID for non-root user | string | automatic |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/davzucky/devcontainers-features-wolfi/blob/main/src/python/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/davzucky/devcontainers-features-wolfi/blob/main/src/user/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
