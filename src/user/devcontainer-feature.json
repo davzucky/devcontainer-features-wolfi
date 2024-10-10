@@ -1,0 +1,39 @@
+{
+    "name": "user",
+    "id": "user",
+    "version": "1.0.0",
+    "description": "Create a user and group with the same id.",
+    "documentationURL": "https://github.com/davzucky/devcontainers-features-wolfi/tree/main/src/user",
+    "options": {
+        "username": {
+            "type": "string",
+            "proposals": [
+                "devcontainer",
+                "vscode",
+                "codespace",
+                "none",
+                "automatic"
+            ],
+            "default": "automatic",
+            "description": "Enter name of a non-root user to configure or none to skip"
+        },
+        "userUid": {
+            "type": "string",
+            "proposals": [
+                "1001",
+                "automatic"
+            ],
+            "default": "automatic",
+            "description": "Enter UID for non-root user"
+        },
+        "userGid": {
+            "type": "string",
+            "proposals": [
+                "1001",
+                "automatic"
+            ],
+            "default": "automatic",
+            "description": "Enter GID for non-root user"
+        }
+    }
+}
