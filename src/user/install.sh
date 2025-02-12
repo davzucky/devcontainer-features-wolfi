@@ -8,15 +8,15 @@ USER_GID="${USERGID:-"automatic"}"
 
 # Checks if packages are installed and installs them if not
 install_if_not() {
-    if [ -z "$(apk list -I "$@")" ]; then
+    if [ -z "$(apt list -I "$@")" ]; then
         echo "Install package $@"
-        apk add --no-cache "$@"
+        apt add --no-cache "$@"
     fi
 }
 
 
 # Update package list
-apk update
+apt update
 
 install_if_not sudo
 install_if_not shadow
